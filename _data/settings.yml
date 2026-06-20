@@ -1,0 +1,11 @@
+google-ID: ''
+
+menu:
+- {name: 'About Me',   url: 'about'}
+- {name: 'Experience', url: 'experience'}
+- {name: 'Education',  url: 'education'}
+- {name: 'Projects',   url: 'projects'}
+
+social:
+- {icon: 'linkedin',  link: 'www.linkedin.com/in/samarth-gupta-b932031b4'}
+- {icon: 'github',    link: 'https://github.com/antranakhasi'}
