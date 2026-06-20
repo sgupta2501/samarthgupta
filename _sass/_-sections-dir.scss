@@ -1,0 +1,8 @@
+// Importing Sass/SCSS partials from `sass_dir` (defaults to `_sass`)
+@import "base",
+        "default",
+        "footer",
+        "header",
+        "home",
+        "page";
+// SCSS files roughly correspond to HTML files in _includes and _layouts
