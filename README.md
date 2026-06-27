@@ -1,6 +1,6 @@
-# Antra Nakhasi — Portfolio
+# Samarth Gupta — Portfolio
 
-Personal portfolio site for Antra Nakhasi, built on a fork of the [Millennial](https://github.com/LeNPaul/Millennial) Jekyll theme.
+Personal portfolio site for Samarth Gupta, built on a fork of the [Millennial](https://github.com/LeNPaul/Millennial) Jekyll theme.
 
 ## Local Development
 
