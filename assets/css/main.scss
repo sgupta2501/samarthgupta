@@ -27,3 +27,48 @@ $codepen-color: black;
 $rss-color: #ff6600;
 
 @import "-sections-dir";
+
+/* Sticky Header */
+
+.site-header {
+
+    position: sticky;
+    top: 0;
+
+    z-index: 999;
+
+    background: white;
+
+    border-bottom: 1px solid #ececec;
+
+}
+
+/* Small divider */
+
+.menu-divider {
+
+    margin-left: 20px;
+
+    margin-right: 12px;
+
+    border-left: 1px solid #d8d8d8;
+
+}
+
+/* Header icons */
+
+.menu-link i {
+
+    font-size: 18px;
+
+    margin-left: 12px;
+
+}
+
+.site-subtitle{
+
+    color:#6366F1;
+
+    font-weight:500;
+
+}
