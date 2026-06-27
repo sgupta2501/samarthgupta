@@ -1,11 +1,16 @@
 google-ID: ''
 
 menu:
-- {name: 'About Me',   url: 'about'}
+- {name: 'About', url: 'about'}
+- {name: 'Academics', url: 'academics'}
 - {name: 'Experience', url: 'experience'}
-- {name: 'Education',  url: 'education'}
-- {name: 'Projects',   url: 'projects'}
+- {name: 'Leadership', url: 'leadership'}
+- {name: 'Projects', url: 'projects'}
+- {name: 'Learning', url: 'learning'}
+- {name: 'Recommendations', url: 'recommendations'}
+- {name: 'Contact', url: 'contact'}
 
 social:
-- {icon: 'linkedin',  link: 'www.linkedin.com/in/samarth-gupta-b932031b4'}
-- {icon: 'github',    link: 'https://github.com/antranakhasi'}
+- {icon: 'file-text-o', link: '/assets/pdf/FMS_Samarth_Gupta.pdf'}
+- {icon: 'linkedin', link: 'https://www.linkedin.com/in/samarth-gupta-b932031b4'}
+- {icon: 'github', link: 'https://github.com/sgupta2501'}
