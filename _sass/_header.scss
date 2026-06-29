@@ -1,0 +1,275 @@
+/* ==========================================================
+   HEADER
+========================================================== */
+
+.site-header{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:82px;
+
+    background:rgba(255,255,255,.95);
+
+    backdrop-filter:blur(12px);
+
+    -webkit-backdrop-filter:blur(12px);
+
+    border-bottom:1px solid rgba(0,0,0,.04);
+
+    box-shadow:0 8px 28px rgba(0,0,0,.04);
+
+    z-index:1000;
+
+}
+
+
+/* Header container */
+
+.site-header > *{
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+
+/* ==========================================================
+   TITLE
+========================================================== */
+
+.site-title{
+
+    float:left;
+
+    margin:18px 0;
+
+}
+
+.site-title a{
+
+    color:#5A4FF3;
+
+    text-decoration:none;
+
+    font-size:2rem;
+
+    font-weight:600;
+
+    line-height:1;
+
+}
+
+.site-subtitle{
+
+    display:block;
+
+    margin-top:6px;
+
+    font-size:.78rem;
+
+    letter-spacing:2px;
+
+    color:#888;
+
+}
+
+
+/* ==========================================================
+   MENU
+========================================================== */
+
+.menu-list{
+
+    float:right;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    height:82px;
+
+}
+
+.menu-link{
+
+    position:relative;
+
+    padding:10px 12px;
+
+    color:#4C50F5;
+
+    font-size:15px;
+
+    font-weight:500;
+
+    border-radius:8px;
+
+    text-decoration:none;
+
+    transition:.25s;
+
+}
+
+.menu-link:hover{
+
+    background:#F4F2FF;
+
+}
+
+
+/* Active line */
+
+.menu-link::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:12px;
+
+    right:12px;
+
+    bottom:6px;
+
+    height:3px;
+
+    border-radius:999px;
+
+    background:#655CFF;
+
+    opacity:0;
+
+    transition:.25s;
+
+}
+
+.menu-link:hover::after,
+
+.menu-link-active::after{
+
+    opacity:1;
+
+}
+
+
+/* ==========================================================
+   ICONS
+========================================================== */
+
+.menu-link i{
+
+    font-size:18px;
+
+}
+
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+.dropbtn{
+
+    display:none;
+
+}
+
+.dropdown-content{
+
+    display:none;
+
+}
+
+@media(max-width:1200px){
+
+.site-header{
+
+padding:0 24px;
+
+}
+
+.menu-list{
+
+display:none;
+
+}
+
+.dropbtn{
+
+display:block;
+
+margin-top:22px;
+
+background:none;
+
+border:none;
+
+font-size:22px;
+
+cursor:pointer;
+
+}
+
+.dropdown{
+
+position:relative;
+
+float:right;
+
+}
+
+.dropdown-content{
+
+position:absolute;
+
+right:0;
+
+top:60px;
+
+background:white;
+
+min-width:220px;
+
+border-radius:18px;
+
+box-shadow:0 20px 45px rgba(0,0,0,.10);
+
+overflow:hidden;
+
+display:none;
+
+}
+
+.dropdown-content a{
+
+display:block;
+
+padding:14px 18px;
+
+text-decoration:none;
+
+color:#333;
+
+}
+
+.dropdown-content a:hover{
+
+background:#F5F3FF;
+
+}
+
+.dropdown:hover .dropdown-content{
+
+display:block;
+
+}
+
+}
