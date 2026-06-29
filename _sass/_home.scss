@@ -1,0 +1,354 @@
+/* ==========================================================
+   HOMEPAGE
+========================================================== */
+
+.homepage{
+
+    max-width:1200px;
+
+    margin:0 auto;
+
+    padding:30px 24px 80px;
+
+    display:grid;
+
+    grid-template-columns:repeat(2,minmax(0,1fr));
+
+    gap:38px;
+
+}
+
+
+/* ==========================================================
+   CARD
+========================================================== */
+
+.home-card{
+
+    position:relative;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between;
+
+    overflow:hidden;
+
+    min-height:380px;
+
+    background:#ffffff;
+
+    border-radius:30px;
+
+    border:1px solid rgba(0,0,0,.025);
+
+    text-decoration:none;
+
+    color:#222;
+
+    box-shadow:
+        0 3px 10px rgba(20,30,80,.03),
+        0 16px 40px rgba(20,30,80,.08);
+
+    transition:
+        transform .28s ease,
+        box-shadow .28s ease;
+
+}
+
+
+.home-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:
+        0 8px 18px rgba(20,30,80,.05),
+        0 30px 60px rgba(90,79,243,.12);
+
+}
+
+
+/* ==========================================================
+   LARGE CARD
+========================================================== */
+
+.large{
+
+    min-height:440px;
+
+}
+
+
+/* ==========================================================
+   PURPLE BAR
+========================================================== */
+
+.card-top{
+
+    position:absolute;
+
+    top:0;
+
+    left:28px;
+
+    width:90px;
+
+    height:5px;
+
+    border-radius:999px;
+
+    background:#635BFF;
+
+    opacity:0;
+
+    transition:.25s;
+
+}
+
+.home-card:hover .card-top{
+
+    opacity:1;
+
+}
+
+
+/* ==========================================================
+   CONTENT
+========================================================== */
+
+.card-content{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:42px;
+
+}
+
+
+/* ==========================================================
+   LEFT SIDE
+========================================================== */
+
+.card-text{
+
+    width:48%;
+
+}
+
+.card-text h2{
+
+    margin:0 0 18px;
+
+    font-size:3rem;
+
+    font-weight:700;
+
+    line-height:1.15;
+
+    color:#262626;
+
+}
+
+.card-text p{
+
+    margin:0;
+
+    font-size:1.08rem;
+
+    line-height:1.75;
+
+    color:#666;
+
+}
+
+
+/* ==========================================================
+   IMAGES
+========================================================== */
+
+.card-image{
+
+    width:45%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.card-image img{
+
+    width:100%;
+
+    max-width:230px;
+
+    transition:.30s;
+
+}
+
+.card-image-full{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:42px 32px 18px;
+
+}
+
+.card-image-full img{
+
+    width:72%;
+
+    max-height:220px;
+
+    object-fit:contain;
+
+    transition:.30s;
+
+}
+
+.home-card:hover img{
+
+    transform:scale(1.03);
+
+}
+
+
+/* ==========================================================
+   BOTTOM
+========================================================== */
+
+.card-overlay{
+
+    padding:0 34px 34px;
+
+}
+
+.card-overlay h1{
+
+    margin:0;
+
+    font-size:2.15rem;
+
+    font-weight:700;
+
+    color:#262626;
+
+}
+
+.card-overlay p{
+
+    margin-top:10px;
+
+    color:#666;
+
+    font-size:1rem;
+
+    line-height:1.7;
+
+}
+
+
+/* About card title */
+
+.home-card>h1{
+
+    margin:0;
+
+    padding:0 34px 34px;
+
+    font-size:2.3rem;
+
+    color:#262626;
+
+}
+
+
+/* ==========================================================
+   LINKS
+========================================================== */
+
+.home-card,
+.home-card:hover,
+.home-card:visited{
+
+    text-decoration:none;
+
+}
+
+.home-card h1,
+.home-card h2,
+.home-card p{
+
+    text-decoration:none;
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media(max-width:1000px){
+
+.homepage{
+
+grid-template-columns:1fr;
+
+gap:28px;
+
+}
+
+.large{
+
+min-height:390px;
+
+}
+
+.card-content{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.card-text{
+
+width:100%;
+
+}
+
+.card-image{
+
+width:100%;
+
+margin-top:30px;
+
+}
+
+.card-image img{
+
+max-width:200px;
+
+}
+
+.card-image-full img{
+
+width:68%;
+
+}
+
+}
